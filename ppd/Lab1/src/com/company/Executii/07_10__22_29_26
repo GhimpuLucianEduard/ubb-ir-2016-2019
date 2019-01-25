@@ -1,0 +1,30 @@
+Generated matrix: 
+Col count: 4
+Row count: 4
+45 88 57 21 
+43 85 22 66 
+54 81 42 2 
+2 24 76 79 
+
+Generated matrix: 
+Col count: 4
+Row count: 4
+0 56 28 54 
+97 5 15 40 
+84 4 8 51 
+31 38 79 71 
+
+Date: Sun Oct 07 22:29:26 EEST 2018
+=============== SECVENTIAL ===============
+Elapsed time: 0
+13975 3986 4695 10348 
+12139 5429 7869 11530 
+11447 3673 3221 8440 
+11161 3538 7265 10553 
+
+=============== PARALLEL ===============
+Number of elements in matrix: 16
+Rounded number of elements per thread: 2
+Modulo (remained elements): 2
+Thread number: 0. Amount of data: 3
+Thread number: 1. Amount of data: 3

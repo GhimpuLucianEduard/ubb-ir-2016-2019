@@ -1,0 +1,6 @@
+package rpcprotocol;
+
+
+public enum RequestType {
+    LOGIN, LOGOUT, GET_LOGGED_FRIENDS, SEND_MESSAGE, GET_DESTINATII, GET_CURSE, GET_LOCURI, ADD_REZERVARE;
+}

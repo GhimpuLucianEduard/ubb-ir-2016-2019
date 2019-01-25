@@ -1,0 +1,8 @@
+rootProject.name = 'LabMPPCurse'
+include 'Models'
+include 'Persistance'
+include 'Client'
+include 'Networking'
+include 'ServiceInterfaces'
+include 'Server'
+

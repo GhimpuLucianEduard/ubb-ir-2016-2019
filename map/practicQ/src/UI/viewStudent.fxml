@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="443.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ControllerStud">
+   <children>
+      <ListView fx:id="listTest" layoutX="14.0" layoutY="62.0" prefHeight="367.0" prefWidth="262.0" />
+      <Label fx:id="labelStud" layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="202.0" text="Nume Student" />
+      <RadioButton fx:id="radio1" layoutX="306.0" layoutY="62.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton fx:id="radio2" layoutX="306.0" layoutY="97.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton fx:id="radio3" layoutX="306.0" layoutY="132.0" mnemonicParsing="false" text="RadioButton" />
+      <Button layoutX="306.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleRaspuns" text="Trimite Raspuns" />
+      <ListView fx:id="listRez" layoutX="451.0" layoutY="53.0" prefHeight="367.0" prefWidth="243.0" />
+      <Label layoutX="451.0" layoutY="22.0" text="Rezultate Finale" />
+   </children>
+</AnchorPane>

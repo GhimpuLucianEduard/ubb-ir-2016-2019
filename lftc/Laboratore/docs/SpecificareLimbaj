@@ -1,0 +1,84 @@
+Definirea limbajului:
+
+Alfabetul:
+    1. Litere mici si mari
+    2. Cifre
+
+Lexic
+
+A.
+    a. Simboluri
+        -operatori:
+            -aritmeritic: + - * / %
+            -relationali: > < <= >= = !=
+        -separatori:
+            space ; { } < > ,
+        -cuvinte rezervate:
+            while, int, float, if, array, start, else
+    b. identificatori:
+        Combinatii de :
+            Litere mici si mari (a-z, A-Z)
+            Cifere (0-9)
+    c. constante:
+        -caracter | lista de caractere
+        -cifra | numar
+
+
+<program> ::= "start" <compound_stmt>
+<compound_stmt> ::= "{" <stmt_list> "}"
+<stmt_list> ::= <stmt> | <stmt> <stmt_list>
+<stmt> ::= <decl> | <arraydec> | <assign> | <loop> | <if_stmt> | <iostmt>
+<decl> ::= <type> <id> ";"
+<type> ::= "int" | "float" | "bool" | <char>
+<char> ::= <letter>
+<letter> ::= "a" | .. | "z" | "A" | .. | "Z"
+<digit> ::= "0" | .. | "9"
+<id> ::= <letter> <char_list>
+<char_list> ::= <char> | <char> <char_list>
+<arraydec> ::= "array"  <type>  "(" <number> ")" ";"
+<number> ::= <digit> | <digit> <number> | 
+<assign> ::= <id> "=" <expr> ";" | <id> "=" <input>
+<expr> ::= <id> | <const> | <term> <op> <term>
+<term> ::= <expr> | "(" <expr> ")"
+<op> ::= "+" | "-" | "*" | "/" | "%"
+<const> ::= <number> | <float>
+<float> ::= <number> "." <number>
+<loop> ::= "while" "(" <condition> ")" <compound_stmt>
+<condition> ::= <expr> <rel_op> <expr>
+<rel_op> ::= "<" | "<=" | ">" | ">=" | "==" | "!=" 
+<if_stmt> ::= "if" "(" <condition> ")" <compound_stmt> | 
+              "if" "(" <condition> ")" <compound_stmt> "else" <compound_stmt>
+<iostmt> ::= <input> | <output>
+<input> ::= "input" <id> ";"
+<output> ::= "print" "(" <print_arg> ")" ";"
+<print_arg> = <id> | <char_list> | <print_arg> "," <id>
+
+identifier    0
+constant      1
+start         2
+while         3
+if            4
+else          5
+int           6
+float         7
+array         8
+input         9
+print         10
+{             11
+}             12
+;             13
+)             14
+(             15
++             16
+-             17
+*             18
+/             19
+%             20
+>             21
+<             22
+>=            23
+<=            24
+==            25
+!=            26
+=             27
+

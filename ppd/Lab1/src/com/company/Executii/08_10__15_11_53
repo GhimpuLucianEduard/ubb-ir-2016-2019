@@ -1,0 +1,16 @@
+Generated matrix: 
+Col count: 500
+Row count: 500
+Matrix to big to write.
+Generated matrix: 
+Col count: 500
+Row count: 500
+Matrix to big to write.
+=======================START MULT=======================
+=============== PARALLEL ===============
+Number of elements in matrix: 250000
+Rounded number of elements per thread: 31250
+Modulo (remained elements): 0
+Number of threads: 8
+Elapsed time: 458
+Matrix to big to write.

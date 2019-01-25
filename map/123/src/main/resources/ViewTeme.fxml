@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.ViewTemeController">
+   <children>
+      <Label layoutX="19.0" layoutY="33.0" styleClass="customLabel" text="Nr. Tema" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="33.0" />
+      <ComboBox fx:id="comboBoxId" layoutX="94.0" layoutY="28.0" onAction="#handleSelectedItem" styleClass="customComboBox" />
+      <Label layoutX="19.0" layoutY="89.0" styleClass="customLabel" text="Deadline" />
+      <Label layoutX="19.0" layoutY="135.0" styleClass="customLabel" text="Descriere" />
+      <GridPane layoutX="14.0" layoutY="380.0" prefHeight="90.0" prefWidth="674.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="380.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="buttonAddTema" mnemonicParsing="false" onAction="#handleAddTema" styleClass="addButton" text="Adauga Tema" GridPane.halignment="CENTER" />
+            <Button fx:id="buttonUpdateTema" mnemonicParsing="false" onAction="#handleUpdateTema" styleClass="updateButton" text="Modifica Tema" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Button fx:id="buttonDeleteTema" mnemonicParsing="false" onAction="#handleDeleteTema" styleClass="cancelButton" text="Sterge Tema" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+      <Button fx:id="buttonPrelungire" layoutX="224.0" layoutY="84.0" mnemonicParsing="false" onAction="#handlePrelungire" styleClass="addButton" text="Prelungeste Deadline" />
+      <Pane layoutX="94.0" layoutY="84.0" prefHeight="28.0" prefWidth="121.0" styleClass="customPane">
+         <children>
+            <Label layoutX="12.0" layoutY="4.0" prefHeight="21.0" prefWidth="91.0" text="Saptamana: " />
+            <Label fx:id="labelDeadline" layoutX="91.0" layoutY="7.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneDesc" layoutX="94.0" layoutY="135.0" prefHeight="255.0" prefWidth="548.0" styleClass="customPane">
+         <children>
+            <Label fx:id="labelDesc" layoutX="14.0" layoutY="14.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

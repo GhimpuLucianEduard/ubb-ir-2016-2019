@@ -1,0 +1,8 @@
+va recomand sa va uitati intai pe jq ca sa intelegeti ideea ca js e de kkt si sunt multe cacaturi in plus
+
+showNotebooks.php afiseaza tabelul cu toate notebooks din db
+showSelects.php afiseaza selecturile din db.. gen ia din db si face group by dupa proprietate
+shownNotebooksFiltered.php afiseaza tabelul cu notebooks filtrate.. gen la asta se face request la modul productor=ASUA, memorie=DDR4 etc si returneaza ce e corespunzator
+se face un requst spre showNotebooksFiltered.php de fiecare data cand se modifica ORICARE dintre selecturi
+
+gen modifici un select, se apeleaza functia filterNotebooks() din .js-ul corespunzator, care face request la showNotebooksFiltered.php cu valorile setate in selecturi

@@ -1,0 +1,8 @@
+si voi acuma ma intrebati: cum functioneaza asta?
+asteptam intrebarea asta..
+
+- cand deschizi prima data 2js.html se face un request la showPersoane.php
+	- showPersoane.php returneaza o lista de persoane din db + butoanele de next si prev
+	- cand se genereaza butoanele se pune disabled in functie de daca trebuie sa fie disabled sau nu
+	- requestul spre showPersoane.php e facut din .js-uri si se trimite un id
+		- id-ul ala e o variabila globala care creste cu 3 cand dai next si scade cu 3 cand dai prev

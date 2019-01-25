@@ -1,0 +1,50 @@
+1Generated matrix:
+Col count: 1000
+Row count: 1000
+Matrix to big to write.
+Generated matrix: 
+Col count: 1000
+Row count: 1000
+Matrix to big to write.
+=======================START MULT=======================
+=============== SECVENTIAL ===============
+Elapsed time: 10792
+Matrix to big to write.
+=============== PARALLEL ===============
+Number of elements in matrix: 1000000
+Rounded number of elements per thread: 31250
+Modulo (remained elements): 0
+Thread number: 0. Amount of data: 31250
+Thread number: 1. Amount of data: 31250
+Thread number: 2. Amount of data: 31250
+Thread number: 3. Amount of data: 31250
+Thread number: 4. Amount of data: 31250
+Thread number: 5. Amount of data: 31250
+Thread number: 6. Amount of data: 31250
+Thread number: 7. Amount of data: 31250
+Thread number: 8. Amount of data: 31250
+Thread number: 9. Amount of data: 31250
+Thread number: 10. Amount of data: 31250
+Thread number: 11. Amount of data: 31250
+Thread number: 12. Amount of data: 31250
+Thread number: 13. Amount of data: 31250
+Thread number: 14. Amount of data: 31250
+Thread number: 15. Amount of data: 31250
+Thread number: 16. Amount of data: 31250
+Thread number: 17. Amount of data: 31250
+Thread number: 18. Amount of data: 31250
+Thread number: 19. Amount of data: 31250
+Thread number: 20. Amount of data: 31250
+Thread number: 21. Amount of data: 31250
+Thread number: 22. Amount of data: 31250
+Thread number: 23. Amount of data: 31250
+Thread number: 24. Amount of data: 31250
+Thread number: 25. Amount of data: 31250
+Thread number: 26. Amount of data: 31250
+Thread number: 27. Amount of data: 31250
+Thread number: 28. Amount of data: 31250
+Thread number: 29. Amount of data: 31250
+Thread number: 30. Amount of data: 31250
+Thread number: 31. Amount of data: 31250
+Elapsed time: 3556
+Matrix to big to write.

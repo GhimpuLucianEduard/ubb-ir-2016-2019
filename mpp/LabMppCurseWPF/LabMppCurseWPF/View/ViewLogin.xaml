@@ -1,0 +1,24 @@
+﻿<Window x:Class="LabMppCurseWPF.View.ViewLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabMppCurseWPF.View"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="ViewLogin" Height="321.4" Width="300">
+
+  
+    <Grid Margin="0,0,-0.4,1">
+        <Image x:Name="LoginIcon"  HorizontalAlignment="Left" Height="65" Margin="110,10,0,0" VerticalAlignment="Top" Width="85" Source="/LabMppCurseWPF;component/Resources/man-human-person-login-512.png"/>
+        <TextBox x:Name="TextBoxUsername" Text="{Binding Username,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="75,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+        <Label x:Name="LabelUserName" Content="Username" HorizontalAlignment="Left" Margin="110,84,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.13,-0.195">
+
+
+        </Label>
+        <Label x:Name="LabelParola" Content="Parola" HorizontalAlignment="Left" Margin="120,150,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="PasswordBoxParola"  HorizontalAlignment="Left" Margin="75,181,0,0" VerticalAlignment="Top" Width="135" Height="24"/>
+        <Button x:Name="ButtonLogin" Command="{Binding HandleLoginCommand}"  CommandParameter="{Binding ElementName=PasswordBoxParola}" Content="Login" HorizontalAlignment="Left" Margin="95,235,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.395,0.5" Height="20"/>
+
+    </Grid>
+</Window>

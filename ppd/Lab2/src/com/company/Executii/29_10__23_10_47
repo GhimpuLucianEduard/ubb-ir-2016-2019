@@ -1,0 +1,19 @@
+Generated matrix: 
+Col count: 500
+Row count: 500
+Matrix to big to write.
+Generated matrix: 
+Col count: 500
+Row count: 500
+Matrix to big to write.
+=================START======================
+=============== SECVENTIAL ===============
+Elapsed time: 40
+Matrix to big to write.
+=============== PARALLEL ===============
+Number of elements in matrix: 250000
+Rounded number of elements per thread: 976
+Modulo (remained elements): 144
+Number of threads: 256
+Elapsed time: 48
+Matrix to big to write.

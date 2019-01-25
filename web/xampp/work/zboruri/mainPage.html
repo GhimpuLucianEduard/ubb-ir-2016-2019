@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+
+    <script src="main.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div id="mainDiv">
+        <table id="tableZboruri" border="1">
+            <tr>
+                <th>
+                    Nr Zbor
+                </th>
+                <th>
+                    Oras Plecare
+                </th>
+                <th>
+                    Oras Sosire
+                </th>
+                <th>
+                    Data Zbor
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <form method="POST" action="redirect.php">
+
+
+        Zbor Ales:
+        <br>
+        <input id="ales" name="zbor" type="number" readonly>
+        <br>
+        Data:
+        <br>
+        <input id="dataAleasa" name="data" type="text" readonly >
+        <br>
+
+        Nume:
+        <br>
+        <input type="text" name="nume">
+        <br>
+        Prenume:
+        <br>
+        <input type="text" name="prenume">
+        <br>
+        <br>
+        <br>
+        <input type="submit"> 
+
+    </form>
+
+  </body>
+</html>

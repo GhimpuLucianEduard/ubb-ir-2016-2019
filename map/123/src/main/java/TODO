@@ -1,0 +1,7 @@
+1. treaba cu (collection ? <T> ) din controllere
+2. refactorizare (folosrste converterul din utils)
+3. daca exista deja un obiectcu acelasi id, dau mesaj sau nu?
+4. sa fac butonul de adauga din ferestrele modale sa afiseze update cand se modificat
+5. descriee la tema daca e scrisa cu enter nu e bine ca bune new line si in repo
+6. sa fac comboboxurile cu auto complete (daca dau set edit se strica set cell nush ce)
+100. responsive

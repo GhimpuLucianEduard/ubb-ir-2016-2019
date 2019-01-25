@@ -1,0 +1,15 @@
+hrana;100;mcdols;Darius;2000-12-10;
+hrana;100;mcdols;TataVictor;2000-12-10;
+hrana;1020;mcdols;Darius;2000-12-10;
+hrana;1030;mcdols;Darius;2000-12-10;
+hrana;1040;mcdols;Darius;2000-12-10;
+hrana;1500;mcdols;Darius;2000-12-10;
+educatie;12.0;das;Andrei;2018-01-24;
+hrana;213.0;das;Andrei;2018-01-24;
+excursie;321.0;d;Andrei;2018-01-24;
+educatie;321.0;d;TataVictor;2018-01-24;
+excursie;321.0;d;Darius;2018-01-24;
+excursie;3.0;2;TataVictor;2018-01-24;
+imbracaminte;31.0;dd;Darius;2018-01-24;
+educatie;321321.0;eee;Darius;2018-01-24;
+excursie;3132.0;ee;Andrei;2018-01-24;

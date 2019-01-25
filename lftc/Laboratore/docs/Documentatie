@@ -1,0 +1,106 @@
+Documentatie lab 1 = Ghimpu Lucian Eduard 233
+
+
+
+Explicarea codului sursa
+
+Programul este implementat in python. Pentru a parsa fisierul input si a creea
+fisierele output m-am folosit de 2 clasa:
+
+1. FileIterator
+
+Clasa care creeaza un iterator pe fisierul input si permite 
+iterarea caracter cu carater pe fiecare linie a fisierului
+
+2. Parser
+
+Clasa principala care se ocupa de majoritatea operatiilor.
+
+Flow-ul programului:
+
+1. Se parseaza tabela cu simboluri (simbol, cod) si se retin intr-un dictionar auxiliar.
+
+2. Se incepe parsarea documentului, caractere sunt parsate pe rand dupadiferite conditii
+(litere, numere, simboluri, separatori), pe tot parcursul parsarii atomi extrasi sunt validati.
+In cazul in care un atom e valid, el este introdus intr-un dictionar auxiliar unde sunt retinuti toti atomii.
+
+3. Pe parcurs ce atomi sunt retinuti folosesc 2 structuri de date auxiliare pentru a retine toti atomii care urmeaza sa fie afisati 
+in primul fisier output (atom, cod atom, cod TS). Daca un atom este identificator sau constanta, acesta este introdus
+si intr-o tabela de dispersie, tabela care urmeaza a fi scrisa in al doilea fisier de output (cod atom, cod TS)
+
+4. In final, daca nu au aparut erori in cadrul parsarii, cele 2 fisiere sunt creeate. In cazul in care apar erori, utilizatorul
+este instiintat in consola.
+
+Decizii de implementare:
+
+1. Am decis ca indentificatorii sa aiba o lungime maxima de 250 de caractere pentru a nu limita limbajul
+2. Tabela de simboluri este pastrata intr-o tabela de dispersie pentru a oferii operatii cat mai eficiente  O(1)
+3. Am decis ca identificatorii si constantele sa fie in aceasi tabela de simboluri din motive de eficienta
+
+
+Exemplu fisier input:
+
+start
+{
+    float PI = 3.14;
+    float raza = input;
+    float perimetru = 2 * PI * raza;
+    float arie = PI * raza * raza;
+    print arie;
+}
+
+
+Output:
+
+Atom         Cod_Atom  Cod_TS
+---------  ----------  --------
+start               2  ---
+{                  11  ---
+float               7  ---
+PI                  0  1
+=                  27  ---
+3.14                1  2
+;                  13  ---
+float               7  ---
+raza                0  3
+=                  27  ---
+input               9  ---
+;                  13  ---
+float               7  ---
+perimetru           0  4
+=                  27  ---
+2                   1  5
+*                  18  ---
+PI                  0  6
+*                  18  ---
+raza                0  7
+;                  13  ---
+float               7  ---
+arie                0  8
+=                  27  ---
+PI                  0  9
+*                  18  ---
+raza                0  10
+*                  18  ---
+raza                0  11
+;                  13  ---
+print              10  ---
+arie                0  12
+;                  13  ---
+}                  12  ---
+
+========================================
+  Atom  Cod_TS
+------  ---------
+     1  PI
+     2  3.14
+     3  raza
+     4  perimetru
+     5  2
+     6  PI
+     7  raza
+     8  arie
+     9  PI
+    10  raza
+    11  raza
+    12  arie

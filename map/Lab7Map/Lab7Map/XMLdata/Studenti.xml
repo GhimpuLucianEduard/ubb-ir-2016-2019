@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Studenti>
+  <Student id="gl32d1ir23321111">
+    <Nume>Ghimpu Lucian Eduard</Nume>
+    <Grupa>223</Grupa>
+    <Mail>glir@scscluj.ro</Mail>
+    <Prof>Serban Camelia</Prof>
+  </Student>
+  <Student id="gl3d21ir2132111">
+    <Nume>Ghimpu Lucian Eduard</Nume>
+    <Grupa>223</Grupa>
+    <Mail>glir@scscluj.ro</Mail>
+    <Prof>Serban Camelia</Prof>
+  </Student>
+  <Student id="gdsa312lir2321111">
+    <Nume>Ghimpu Lucian Eduard</Nume>
+    <Grupa>223</Grupa>
+    <Mail>glir@scscluj.ro</Mail>
+    <Prof>Serban Camelia</Prof>
+  </Student>
+  <Student id="gl3q12ir2132111">
+    <Nume>Ghimpu Lucian Eduard</Nume>
+    <Grupa>223</Grupa>
+    <Mail>glir@scscluj.ro</Mail>
+    <Prof>Serban Camelia</Prof>
+  </Student>
+  <Student id="eqwewqewq">
+    <Nume>Popescu mihai</Nume>
+    <Grupa>999</Grupa>
+    <Mail>@@</Mail>
+    <Prof>eu</Prof>
+  </Student>
+  <Student id="a">
+    <Nume>a</Nume>
+    <Grupa>1</Grupa>
+    <Mail>a</Mail>
+    <Prof>a</Prof>
+  </Student>
+  <Student id="b">
+    <Nume>b</Nume>
+    <Grupa>2</Grupa>
+    <Mail>b</Mail>
+    <Prof>b</Prof>
+  </Student>
+</Studenti>

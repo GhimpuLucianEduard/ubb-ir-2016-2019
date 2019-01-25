@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="PizzaJs.js"></script>
+</head>
+
+<body>
+
+    <div id="mainContainer">
+        <div id="formContainer" style="float: left;">
+                <img id="pizzaImg">
+                <br>
+                <input disabled="disabled" placeholder="Nume pizza..." type="text" id="pizzaName">
+                <br>
+                <br>
+                <input placeholder="Url poza..." type="text" id="pizzaUrl">
+                <br>
+                <br>
+                <textarea placeholder="Ingrediente..." id="pizzaDesc" rows="5" cols="25"></textarea>
+                <br>
+                <br>
+                <input placeholder="pret" type="number" min="0" max="100" id="pizzaPret">
+                <br>
+                <br>
+                <button id="saveButton" disabled="true">SAVE</button>
+        </div>
+
+        <div id="listContainer" style="float: left;" >
+
+        </div>
+    </div>
+</body>
+</html>

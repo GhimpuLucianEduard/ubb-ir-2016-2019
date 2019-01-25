@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ControllerCopil">
+   <children>
+      <TableView fx:id="tableChelt" layoutX="14.0" layoutY="14.0" prefHeight="368.0" prefWidth="401.0">
+        <columns>
+          <TableColumn fx:id="cId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="cSuma" prefWidth="75.0" text="Suma" />
+            <TableColumn fx:id="cTip" prefWidth="75.0" text="Tip" />
+            <TableColumn fx:id="cData" prefWidth="75.0" text="Data" />
+            <TableColumn fx:id="cDesc" prefWidth="75.0" text="Desc" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="445.0" layoutY="14.0" prefHeight="43.0" prefWidth="125.0" text="Suma Disponibila:" />
+      <Label fx:id="labelSumaDisp" layoutX="472.0" layoutY="57.0" text="label suma" />
+      <Button layoutX="440.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleAdd" text="Adauga cheltuiala noua" />
+   </children>
+</AnchorPane>

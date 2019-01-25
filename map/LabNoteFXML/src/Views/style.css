@@ -1,0 +1,133 @@
+.root {
+    -fx-accent: #337ab7;
+    -fx-focus-color: #2e6da4;
+}
+
+
+.mainContainer {
+    -fx-background-color: #F5F5F5;
+}
+
+.leftContainer {
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+}
+
+.customPane {
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+}
+
+.rightContainer {
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+}
+
+.customLabel {
+    -fx-font-family: sans-serif;
+    -fx-alignment: center;
+    -fx-text-fill: black;
+    -fx-font-size: 14;
+}
+
+.customComboBox {
+    -fx-font-family: sans-serif;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+}
+.leftBarLabels {
+    -fx-font-family: sans-serif;
+    -fx-alignment: center;
+    -fx-text-fill: black;
+    -fx-font-size: 18;
+}
+
+.leftBarLabels:hover {
+    -fx-text-fill: #337ab7;
+}
+
+.customTextField {
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+}
+
+.customTableView {
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+}
+
+.test-back {
+    -fx-border-color: red;
+}
+
+.bottomGridPane {
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+    -fx-background-color: #F5F5F5;
+
+}
+
+.button {
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+}
+
+
+.addButton {
+     -fx-color: #fff;
+     -fx-background-color: #337ab7;
+     -fx-border-color: #2e6da4;
+     -fx-font-family: sans-serif;
+     -fx-alignment: center;
+     -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+
+ }
+
+.addButton:hover {
+    -fx-background-color: #286090;
+    -fx-border-color: #204d74;
+}
+
+
+.cancelButton {
+    -fx-background-color: #d9534f;
+    -fx-border-color: #d43f3a;
+    -fx-font-family: sans-serif;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+
+}
+
+
+.cancelButton:hover {
+    -fx-background-color: #c9302c;
+    -fx-border-color: #ac2925;
+}
+
+.updateButton {
+    -fx-background-color: #5bc0de;
+    -fx-border-color: #46b8da;
+    -fx-font-family: sans-serif;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+}
+
+.updateButton:hover {
+    -fx-background-color: #31b0d5;
+    -fx-border-color: #269abc;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:#337ab7 ;
+
+}
+
+.dialogBoxLabel {
+    -fx-text-alignment: center;
+    -fx-font-size: 14;
+    -fx-alignment: center;
+    -fx-font-family: sans-serif;
+
+}

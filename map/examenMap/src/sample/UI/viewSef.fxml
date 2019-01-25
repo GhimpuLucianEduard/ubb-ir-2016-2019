@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="551.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UI.ControllerSef">
+   <children>
+      <ListView fx:id="listAngajati" layoutX="14.0" layoutY="45.0" prefHeight="408.0" prefWidth="262.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Membrii activi" />
+      <Button fx:id="buttonRetragere" layoutX="61.0" layoutY="461.0" mnemonicParsing="false" onAction="#handleRetragere" text="Ma retrag" />
+      <TableView fx:id="tableMesaje" layoutX="292.0" layoutY="45.0" prefHeight="408.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="cExp" prefWidth="75.0" text="Expediatar" />
+          <TableColumn fx:id="cMesaj" prefWidth="75.0" text="Mesaj" />
+            <TableColumn fx:id="cData" prefWidth="75.0" text="Data" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="buttonAdd" layoutX="292.0" layoutY="506.0" mnemonicParsing="false" onAction="#handleAddToti" text="Trimite Mesaj Tuturor" />
+      <TextField fx:id="fieldMesaj" layoutX="292.0" layoutY="461.0" promptText="Tipareste un mesaj adresat tuturor" />
+   </children>
+</AnchorPane>

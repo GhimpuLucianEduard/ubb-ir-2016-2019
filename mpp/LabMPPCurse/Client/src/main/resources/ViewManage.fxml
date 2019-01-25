@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="455.0" stylesheets="style.css" prefWidth="994.0" styleClass="mainContainer" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerManage">
+   <children>
+      <SplitPane fx:id="SplitPaneContainer" dividerPositions="0.7" layoutX="14.0" layoutY="49.0" prefHeight="413.0" prefWidth="885.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="49.0">
+        <items>
+          <AnchorPane fx:id="anchorPaneLeft" minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="415.0" styleClass="leftContainer" />
+          <AnchorPane fx:id="anchorPaneRight" minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="444.0" styleClass="rightContainer">
+               <children>
+                  <Button layoutX="104.0" layoutY="211.0" mnemonicParsing="false"  text="Button" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <MenuBar layoutX="7.0" layoutY="8.0" prefHeight="32.0" prefWidth="894.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="5.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="More">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Logout" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

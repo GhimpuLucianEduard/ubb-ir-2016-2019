@@ -1,0 +1,6 @@
+rootProject.name = 'Lab4PPD'
+include 'Domain'
+include 'Interfaces'
+include 'Server'
+include 'Client'
+

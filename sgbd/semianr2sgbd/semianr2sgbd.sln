@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semianr2sgbd", "semianr2sgbd\semianr2sgbd.csproj", "{571D9915-F0A4-40BD-BA77-5C3DA0C7DED5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant", "Restaurant\Restaurant.csproj", "{7FEFABDC-AB18-4474-AB07-0F7D726F82EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{571D9915-F0A4-40BD-BA77-5C3DA0C7DED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571D9915-F0A4-40BD-BA77-5C3DA0C7DED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571D9915-F0A4-40BD-BA77-5C3DA0C7DED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571D9915-F0A4-40BD-BA77-5C3DA0C7DED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FEFABDC-AB18-4474-AB07-0F7D726F82EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FEFABDC-AB18-4474-AB07-0F7D726F82EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FEFABDC-AB18-4474-AB07-0F7D726F82EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FEFABDC-AB18-4474-AB07-0F7D726F82EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9569B70-BB19-4AD2-B170-5FF48AAF7855}
+	EndGlobalSection
+EndGlobal

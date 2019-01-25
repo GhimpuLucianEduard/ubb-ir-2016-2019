@@ -1,0 +1,146 @@
+Generated matrix: 
+Col count: 1000
+Row count: 1000
+Matrix to big to write.
+Generated matrix: 
+Col count: 1000
+Row count: 1000
+Matrix to big to write.
+=======================START MULT=======================
+=============== SECVENTIAL ===============
+Elapsed time: 10538
+Matrix to big to write.
+=============== PARALLEL ===============
+Number of elements in matrix: 1000000
+Rounded number of elements per thread: 7812
+Modulo (remained elements): 64
+Thread number: 0. Amount of data: 7813
+Thread number: 1. Amount of data: 7813
+Thread number: 2. Amount of data: 7813
+Thread number: 3. Amount of data: 7813
+Thread number: 4. Amount of data: 7813
+Thread number: 5. Amount of data: 7813
+Thread number: 6. Amount of data: 7813
+Thread number: 7. Amount of data: 7813
+Thread number: 8. Amount of data: 7813
+Thread number: 9. Amount of data: 7813
+Thread number: 10. Amount of data: 7813
+Thread number: 11. Amount of data: 7813
+Thread number: 12. Amount of data: 7813
+Thread number: 13. Amount of data: 7813
+Thread number: 14. Amount of data: 7813
+Thread number: 15. Amount of data: 7813
+Thread number: 16. Amount of data: 7813
+Thread number: 17. Amount of data: 7813
+Thread number: 18. Amount of data: 7813
+Thread number: 19. Amount of data: 7813
+Thread number: 20. Amount of data: 7813
+Thread number: 21. Amount of data: 7813
+Thread number: 22. Amount of data: 7813
+Thread number: 23. Amount of data: 7813
+Thread number: 24. Amount of data: 7813
+Thread number: 25. Amount of data: 7813
+Thread number: 26. Amount of data: 7813
+Thread number: 27. Amount of data: 7813
+Thread number: 28. Amount of data: 7813
+Thread number: 29. Amount of data: 7813
+Thread number: 30. Amount of data: 7813
+Thread number: 31. Amount of data: 7813
+Thread number: 32. Amount of data: 7813
+Thread number: 33. Amount of data: 7813
+Thread number: 34. Amount of data: 7813
+Thread number: 35. Amount of data: 7813
+Thread number: 36. Amount of data: 7813
+Thread number: 37. Amount of data: 7813
+Thread number: 38. Amount of data: 7813
+Thread number: 39. Amount of data: 7813
+Thread number: 40. Amount of data: 7813
+Thread number: 41. Amount of data: 7813
+Thread number: 42. Amount of data: 7813
+Thread number: 43. Amount of data: 7813
+Thread number: 44. Amount of data: 7813
+Thread number: 45. Amount of data: 7813
+Thread number: 46. Amount of data: 7813
+Thread number: 47. Amount of data: 7813
+Thread number: 48. Amount of data: 7813
+Thread number: 49. Amount of data: 7813
+Thread number: 50. Amount of data: 7813
+Thread number: 51. Amount of data: 7813
+Thread number: 52. Amount of data: 7813
+Thread number: 53. Amount of data: 7813
+Thread number: 54. Amount of data: 7813
+Thread number: 55. Amount of data: 7813
+Thread number: 56. Amount of data: 7813
+Thread number: 57. Amount of data: 7813
+Thread number: 58. Amount of data: 7813
+Thread number: 59. Amount of data: 7813
+Thread number: 60. Amount of data: 7813
+Thread number: 61. Amount of data: 7813
+Thread number: 62. Amount of data: 7813
+Thread number: 63. Amount of data: 7813
+Thread number: 64. Amount of data: 7812
+Thread number: 65. Amount of data: 7812
+Thread number: 66. Amount of data: 7812
+Thread number: 67. Amount of data: 7812
+Thread number: 68. Amount of data: 7812
+Thread number: 69. Amount of data: 7812
+Thread number: 70. Amount of data: 7812
+Thread number: 71. Amount of data: 7812
+Thread number: 72. Amount of data: 7812
+Thread number: 73. Amount of data: 7812
+Thread number: 74. Amount of data: 7812
+Thread number: 75. Amount of data: 7812
+Thread number: 76. Amount of data: 7812
+Thread number: 77. Amount of data: 7812
+Thread number: 78. Amount of data: 7812
+Thread number: 79. Amount of data: 7812
+Thread number: 80. Amount of data: 7812
+Thread number: 81. Amount of data: 7812
+Thread number: 82. Amount of data: 7812
+Thread number: 83. Amount of data: 7812
+Thread number: 84. Amount of data: 7812
+Thread number: 85. Amount of data: 7812
+Thread number: 86. Amount of data: 7812
+Thread number: 87. Amount of data: 7812
+Thread number: 88. Amount of data: 7812
+Thread number: 89. Amount of data: 7812
+Thread number: 90. Amount of data: 7812
+Thread number: 91. Amount of data: 7812
+Thread number: 92. Amount of data: 7812
+Thread number: 93. Amount of data: 7812
+Thread number: 94. Amount of data: 7812
+Thread number: 95. Amount of data: 7812
+Thread number: 96. Amount of data: 7812
+Thread number: 97. Amount of data: 7812
+Thread number: 98. Amount of data: 7812
+Thread number: 99. Amount of data: 7812
+Thread number: 100. Amount of data: 7812
+Thread number: 101. Amount of data: 7812
+Thread number: 102. Amount of data: 7812
+Thread number: 103. Amount of data: 7812
+Thread number: 104. Amount of data: 7812
+Thread number: 105. Amount of data: 7812
+Thread number: 106. Amount of data: 7812
+Thread number: 107. Amount of data: 7812
+Thread number: 108. Amount of data: 7812
+Thread number: 109. Amount of data: 7812
+Thread number: 110. Amount of data: 7812
+Thread number: 111. Amount of data: 7812
+Thread number: 112. Amount of data: 7812
+Thread number: 113. Amount of data: 7812
+Thread number: 114. Amount of data: 7812
+Thread number: 115. Amount of data: 7812
+Thread number: 116. Amount of data: 7812
+Thread number: 117. Amount of data: 7812
+Thread number: 118. Amount of data: 7812
+Thread number: 119. Amount of data: 7812
+Thread number: 120. Amount of data: 7812
+Thread number: 121. Amount of data: 7812
+Thread number: 122. Amount of data: 7812
+Thread number: 123. Amount of data: 7812
+Thread number: 124. Amount of data: 7812
+Thread number: 125. Amount of data: 7812
+Thread number: 126. Amount of data: 7812
+Thread number: 127. Amount of data: 7812
+Elapsed time: 4241
+Matrix to big to write.

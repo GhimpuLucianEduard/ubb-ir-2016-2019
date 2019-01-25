@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <util:properties id="jdbcProps">
+        <prop key="curseDB.jdbc.driver">org.sqlite.JDBC</prop>
+        <prop key="curseDB.jdbc.url">jdbc:sqlite:C:/Users/Deus/Desktop/SQLiteStudio/CurseDB.db</prop>
+    </util:properties>
+
+
+    <bean id="repoDbDestinatii" class="Repository.RepoDbDestinatie">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="repoDbClienti" class="Repository.RepoDbClienti">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="repoDbRezervari" class="Repository.RepoDbRezervari">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="repoDBCurse" class="Repository.RepoDBCurse">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="repoPersonal" class="Repository.RepoDbPersonal">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="servicePersonal" class="Service.ServicePersonal">
+        <constructor-arg ref="repoPersonal"/>
+    </bean>
+
+    <bean id="serviceCursa" class="Service.ServiceCurse">
+        <constructor-arg ref="repoDBCurse"/>
+    </bean>
+
+    <bean id="serviceRezervari" class="Service.ServiceRezervari">
+        <constructor-arg ref="repoDbRezervari"/>
+    </bean>
+
+    <bean id="serviceClienti" class="Service.ServiceClienti">
+        <constructor-arg ref="repoDbClienti"/>
+    </bean>
+
+    <bean id="serviceDestinatii" class="Service.ServiceDestinatii">
+        <constructor-arg ref="repoDbDestinatii"/>
+    </bean>
+
+    <bean id="mainService" class="Service.MainService">
+        <constructor-arg ref="servicePersonal"/>
+        <constructor-arg ref="serviceCursa"/>
+        <constructor-arg ref="serviceRezervari"/>
+        <constructor-arg ref="serviceClienti"/>
+        <constructor-arg ref="serviceDestinatii"/>
+    </bean>
+
+
+
+</beans>

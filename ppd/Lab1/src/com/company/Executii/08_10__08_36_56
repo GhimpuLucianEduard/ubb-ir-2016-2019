@@ -1,0 +1,42 @@
+Generated matrix: 
+Col count: 5
+Row count: 5
+4 8 3 6 7 
+2 1 9 8 0 
+1 7 3 5 4 
+5 0 3 9 2 
+1 7 7 3 1 
+
+Generated matrix: 
+Col count: 5
+Row count: 5
+9 7 1 4 4 
+7 2 2 6 5 
+7 0 1 5 4 
+7 1 1 6 8 
+4 2 9 0 2 
+
+=============== SECVENTIAL ===============
+Elapsed time: 1
+13 15 4 10 11 
+9 3 11 14 5 
+8 7 4 10 8 
+12 1 4 15 10 
+5 9 16 3 3 
+
+=============== PARALLEL ===============
+Number of elements in matrix: 25
+Rounded number of elements per thread: 5
+Modulo (remained elements): 0
+Thread number: 0. Amount of data: 5
+Thread number: 1. Amount of data: 5
+Thread number: 2. Amount of data: 5
+Thread number: 3. Amount of data: 5
+Thread number: 4. Amount of data: 5
+Elapsed time: 4
+13 15 4 10 11 
+9 3 11 14 5 
+8 7 4 10 8 
+12 1 4 15 10 
+5 9 16 3 3 
+

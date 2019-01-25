@@ -1,0 +1,10 @@
+1;cerinta1;r1;r2;r3;r1;1;
+2;cerinta2;r1;r2;r3;r1;1;
+3;cerinta3;r1;r2;r3;r1;1;
+4;cerinta4;r1;r2;r3;r1;1;
+5;cerinta5;r1;r2;r3;r1;1;
+6;cerinta6;r1;r2;r3;r1;1;
+7;cerinta7;r1;r2;r3;r1;1;
+8;cerinta8;r1;r2;r3;r1;1;
+9;cerinta9;r1;r2;r3;r1;1;
+10;cerint101;r1;r2;r3;r1;1;

@@ -1,0 +1,3 @@
+Actiune              Nr tema    Nota       Deadline   Sapt. Predarii  Observatii                    
+Adaugare Nota        2          1.000000   5          14                                       
+Modificare Nota      2          10.000000  5          5                                        

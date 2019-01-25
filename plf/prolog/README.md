@@ -1,0 +1,2 @@
+# PrologStuff
+Laburi prolog + altele

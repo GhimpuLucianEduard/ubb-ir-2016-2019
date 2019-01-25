@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="465.0" prefWidth="600.0" styleClass="mainContainer" stylesheets="style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerLogin">
+   <children>
+      <TextField fx:id="textUsername" layoutX="207.0" layoutY="217.0" styleClass="customTextField" />
+      <Label layoutX="263.0" layoutY="180.0" styleClass="customLabel" text="Username:" />
+      <Label layoutX="264.0" layoutY="268.0" styleClass="customLabel" text="Password:" />
+      <Button fx:id="buttonLogin" layoutX="269.0" layoutY="392.0" mnemonicParsing="false" onAction="#handleLogin" styleClass="addButton" text="Login" />
+      <ImageView fitHeight="150.0" fitWidth="165.0" layoutX="222.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" styleClass="mainContainer">
+         <image>
+            <Image url="@img/loginIcon.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="textPass" layoutX="207.0" layoutY="305.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+Numar threaduri: 128
+Numar randurii: 1000
+Numar coloane: 1000
+Matrice prea mare pentru a fi tiparita
+=============================SECVENTIAL===============================
+Timp secvential: 
+788
+Matrice Rezultat: 
+Matrice prea mare pentru a fi tiparita
+=============================PARALEL===============================
+Timp paralel: 
+263
+Matrice Rezultat: 
+Matrice prea mare pentru a fi tiparita

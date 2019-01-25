@@ -1,0 +1,64 @@
+%{
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+#include "grammar.tab.h"
+
+int line = 0;
+
+%}
+
+
+%option noyywrap
+%option yylineno
+digit     [0-9]
+letter  [a-zA-Z]
+
+%%
+"start"         return START;
+"while"         return WHILE;
+"if"            return IF;
+"else"          return ELSE;
+"int"           return INT;
+"char"          return CHAR;
+"float"         return FLOAT;
+"array"         return ARRAY;
+"input"         return INPUT;
+"print"         return PRINT;
+"length"		return LENGTH;
+\{              return OBRACE;
+\}              return CBRACE;
+\;              return SEMICOLON;
+\)              return CPAR;
+\(              return OPAR;
+\+              return PLUS;
+\-              return MINUS;;
+\*              return MULT;
+\/              return DIV;
+\%              return MOD;
+\>              return GT;
+\<              return LT;
+\>=             return GE;
+\<=             return LE;
+\==             return EQ;
+\!=             return NE;
+\=              return ASSIGN;
+
+{digit}+             return CONST;
+{digit}+"."{digit}*   return CONSTREAL;
+{letter}*     return IDENT;
+[\n]+			{ line++; }
+[ \t\n]+      /* skip whitespace */ 
+.             printf("Unknown token %s \n", yytext);
+%%
+
+int main_flex(int argc, char *argv[]) 
+{
+  if (argc != 2) {
+		printf("Please provide a source file!");
+		return 0;
+	}
+
+  yyin = fopen(argv[1], "r");
+}

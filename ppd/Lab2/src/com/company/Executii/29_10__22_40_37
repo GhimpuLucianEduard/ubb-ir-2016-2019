@@ -1,0 +1,315 @@
+Generated matrix: 
+Col count: 10
+Row count: 10
+4.783139 3.9653664 -1.4765823 -2.2956562 4.763919 -1.1283131 3.089796 2.754693 -4.3458967 1.3732414 
+-2.913636 4.148134 4.759774 0.92787075 1.4678235 -1.8139749 -4.50141 4.4568834 4.9112873 1.721869 
+4.213313 0.16642809 4.261282 -2.0236862 -1.6544719 -0.6606703 3.3346481 -1.6902554 4.692195 -2.6926339 
+0.899457 -0.4088621 2.3133307 -4.354501 -2.6201658 2.7215242 0.9790797 3.591011 2.4345274 -4.746886 
+4.020193 1.5808754 1.0831299 3.7677898 1.6655545 -4.300103 -3.7610853 3.1495132 3.9078712 1.601644 
+-2.7642524 -4.4563417 -1.4655507 -3.7535012 1.7497082 1.6130219 2.0007281 -2.479918 -2.8889334 -2.322616 
+-3.4771657 -4.3440304 3.732626 0.99397135 3.2409706 -2.6246464 0.7559943 0.364686 -2.9166102 -1.9593759 
+2.2040076 3.538066 -3.527341 -1.0513353 1.2476454 -3.3633614 -0.9002781 4.4929934 3.6278381 3.7418346 
+1.3911963 -3.5869193 -3.0487251 -1.5016234 3.161601 2.1168332 -3.704166 0.37873316 3.331643 -0.7178712 
+4.2626915 -0.67215157 -3.0310245 -3.929419 3.9021053 -3.3279538 -3.3616405 2.5576348 -0.4218712 2.2382784 
+
+Generated matrix: 
+Col count: 10
+Row count: 10
+1.9090157 4.9152937 -4.760028 -3.0635893 3.5401068 -4.2239227 3.306816 2.9849806 3.4383278 -3.360784 
+4.676977 -3.5819793 -3.0511265 -3.4859347 0.62626743 -3.5634089 0.8028693 3.8736734 -2.3947997 -3.9657636 
+2.4073505 0.83737326 3.3775663 -2.3672361 4.840991 2.0200925 -2.5825472 -4.7534328 -3.4708924 -0.8356981 
+-4.9923162 2.0148058 -3.8595903 3.2754984 -4.2740226 4.3966618 -3.2928343 1.0629559 -4.2118573 4.5427017 
+-0.34216928 2.8739476 -4.481223 2.493174 -0.38920116 -3.386643 -1.3258905 4.1014156 -3.9397037 1.2539082 
+-2.2602754 -2.3419535 4.0470514 -4.860861 -2.8847635 -2.1486855 4.5102625 -2.6833062 -4.617893 -4.7760134 
+-2.8674216 4.3499136 4.8893805 -0.007982731 -3.6082358 3.458622 -4.398717 2.820588 1.4030733 4.234189 
+4.602556 0.7859225 4.5629444 2.6396656 -0.41934967 2.6947742 4.48168 0.40410233 -4.1167336 4.6271105 
+-1.8793969 1.393919 1.926116 -1.018085 2.2344346 1.0170012 -3.5033898 0.44329214 -1.6246886 0.3922963 
+-3.7821865 1.6772151 0.95989656 -0.11471701 -0.38666058 3.7829094 -2.2389734 -4.064541 1.013792 -0.3473692 
+
+=================START======================
+=============== SECVENTIAL ===============
+Elapsed time: 2
+9.131087 19.49094 7.028573 7.032948 16.864782 4.7659073 10.217387 8.222705 -14.942617 -4.615168 
+-13.627008 -14.858531 -14.522673 -3.2344968 0.9192501 6.463934 -3.614044 17.264511 -11.761549 -6.8285255 
+10.142921 0.13936242 14.392762 4.790543 -8.009283 -1.3346151 -8.611886 8.034515 -16.286104 2.2502291 
+-4.4903736 -0.82377774 -8.928509 -14.263161 11.1986475 11.965622 -3.2239473 3.8170862 -10.253882 -21.563686 
+-1.3755866 4.543353 -4.853747 9.393756 -0.64823574 14.562914 4.9867873 12.917463 -15.395855 2.0083146 
+6.2479715 10.436545 -5.931159 18.245247 -5.0474944 -3.4658766 9.023809 6.6543794 13.340786 11.092846 
+9.9705 -18.896156 18.250229 -0.007934606 -11.694186 -9.07766 -3.3254051 1.0286291 -4.092218 -8.296368 
+10.144069 2.7806456 -16.09506 -2.7751737 -0.5231997 -9.063499 -4.034758 1.815629 -14.934843 17.313883 
+-2.61461 -4.999875 -5.872198 1.5287802 7.0643907 2.1528218 12.977138 0.16788943 -5.412883 -0.2816182 
+-16.122293 -1.1273427 -2.90947 0.45077118 -1.5087903 -12.589348 7.5266232 -10.395611 -0.42768964 -0.777509 
+
+=============== PARALLEL ===============
+Number of elements in matrix: 100
+Rounded number of elements per thread: 0
+Modulo (remained elements): 100
+Number of threads: 256
+Thread number: 0. Amount of data: 1
+Thread number: 1. Amount of data: 1
+Thread number: 2. Amount of data: 1
+Thread number: 3. Amount of data: 1
+Thread number: 4. Amount of data: 1
+Thread number: 5. Amount of data: 1
+Thread number: 6. Amount of data: 1
+Thread number: 7. Amount of data: 1
+Thread number: 8. Amount of data: 1
+Thread number: 9. Amount of data: 1
+Thread number: 10. Amount of data: 1
+Thread number: 11. Amount of data: 1
+Thread number: 12. Amount of data: 1
+Thread number: 13. Amount of data: 1
+Thread number: 14. Amount of data: 1
+Thread number: 15. Amount of data: 1
+Thread number: 16. Amount of data: 1
+Thread number: 17. Amount of data: 1
+Thread number: 18. Amount of data: 1
+Thread number: 19. Amount of data: 1
+Thread number: 20. Amount of data: 1
+Thread number: 21. Amount of data: 1
+Thread number: 22. Amount of data: 1
+Thread number: 23. Amount of data: 1
+Thread number: 24. Amount of data: 1
+Thread number: 25. Amount of data: 1
+Thread number: 26. Amount of data: 1
+Thread number: 27. Amount of data: 1
+Thread number: 28. Amount of data: 1
+Thread number: 29. Amount of data: 1
+Thread number: 30. Amount of data: 1
+Thread number: 31. Amount of data: 1
+Thread number: 32. Amount of data: 1
+Thread number: 33. Amount of data: 1
+Thread number: 34. Amount of data: 1
+Thread number: 35. Amount of data: 1
+Thread number: 36. Amount of data: 1
+Thread number: 37. Amount of data: 1
+Thread number: 38. Amount of data: 1
+Thread number: 39. Amount of data: 1
+Thread number: 40. Amount of data: 1
+Thread number: 41. Amount of data: 1
+Thread number: 42. Amount of data: 1
+Thread number: 43. Amount of data: 1
+Thread number: 44. Amount of data: 1
+Thread number: 45. Amount of data: 1
+Thread number: 46. Amount of data: 1
+Thread number: 47. Amount of data: 1
+Thread number: 48. Amount of data: 1
+Thread number: 49. Amount of data: 1
+Thread number: 50. Amount of data: 1
+Thread number: 51. Amount of data: 1
+Thread number: 52. Amount of data: 1
+Thread number: 53. Amount of data: 1
+Thread number: 54. Amount of data: 1
+Thread number: 55. Amount of data: 1
+Thread number: 56. Amount of data: 1
+Thread number: 57. Amount of data: 1
+Thread number: 58. Amount of data: 1
+Thread number: 59. Amount of data: 1
+Thread number: 60. Amount of data: 1
+Thread number: 61. Amount of data: 1
+Thread number: 62. Amount of data: 1
+Thread number: 63. Amount of data: 1
+Thread number: 64. Amount of data: 1
+Thread number: 65. Amount of data: 1
+Thread number: 66. Amount of data: 1
+Thread number: 67. Amount of data: 1
+Thread number: 68. Amount of data: 1
+Thread number: 69. Amount of data: 1
+Thread number: 70. Amount of data: 1
+Thread number: 71. Amount of data: 1
+Thread number: 72. Amount of data: 1
+Thread number: 73. Amount of data: 1
+Thread number: 74. Amount of data: 1
+Thread number: 75. Amount of data: 1
+Thread number: 76. Amount of data: 1
+Thread number: 77. Amount of data: 1
+Thread number: 78. Amount of data: 1
+Thread number: 79. Amount of data: 1
+Thread number: 80. Amount of data: 1
+Thread number: 81. Amount of data: 1
+Thread number: 82. Amount of data: 1
+Thread number: 83. Amount of data: 1
+Thread number: 84. Amount of data: 1
+Thread number: 85. Amount of data: 1
+Thread number: 86. Amount of data: 1
+Thread number: 87. Amount of data: 1
+Thread number: 88. Amount of data: 1
+Thread number: 89. Amount of data: 1
+Thread number: 90. Amount of data: 1
+Thread number: 91. Amount of data: 1
+Thread number: 92. Amount of data: 1
+Thread number: 93. Amount of data: 1
+Thread number: 94. Amount of data: 1
+Thread number: 95. Amount of data: 1
+Thread number: 96. Amount of data: 1
+Thread number: 97. Amount of data: 1
+Thread number: 98. Amount of data: 1
+Thread number: 99. Amount of data: 1
+Thread number: 100. Amount of data: 0
+Thread number: 101. Amount of data: 0
+Thread number: 102. Amount of data: 0
+Thread number: 103. Amount of data: 0
+Thread number: 104. Amount of data: 0
+Thread number: 105. Amount of data: 0
+Thread number: 106. Amount of data: 0
+Thread number: 107. Amount of data: 0
+Thread number: 108. Amount of data: 0
+Thread number: 109. Amount of data: 0
+Thread number: 110. Amount of data: 0
+Thread number: 111. Amount of data: 0
+Thread number: 112. Amount of data: 0
+Thread number: 113. Amount of data: 0
+Thread number: 114. Amount of data: 0
+Thread number: 115. Amount of data: 0
+Thread number: 116. Amount of data: 0
+Thread number: 117. Amount of data: 0
+Thread number: 118. Amount of data: 0
+Thread number: 119. Amount of data: 0
+Thread number: 120. Amount of data: 0
+Thread number: 121. Amount of data: 0
+Thread number: 122. Amount of data: 0
+Thread number: 123. Amount of data: 0
+Thread number: 124. Amount of data: 0
+Thread number: 125. Amount of data: 0
+Thread number: 126. Amount of data: 0
+Thread number: 127. Amount of data: 0
+Thread number: 128. Amount of data: 0
+Thread number: 129. Amount of data: 0
+Thread number: 130. Amount of data: 0
+Thread number: 131. Amount of data: 0
+Thread number: 132. Amount of data: 0
+Thread number: 133. Amount of data: 0
+Thread number: 134. Amount of data: 0
+Thread number: 135. Amount of data: 0
+Thread number: 136. Amount of data: 0
+Thread number: 137. Amount of data: 0
+Thread number: 138. Amount of data: 0
+Thread number: 139. Amount of data: 0
+Thread number: 140. Amount of data: 0
+Thread number: 141. Amount of data: 0
+Thread number: 142. Amount of data: 0
+Thread number: 143. Amount of data: 0
+Thread number: 144. Amount of data: 0
+Thread number: 145. Amount of data: 0
+Thread number: 146. Amount of data: 0
+Thread number: 147. Amount of data: 0
+Thread number: 148. Amount of data: 0
+Thread number: 149. Amount of data: 0
+Thread number: 150. Amount of data: 0
+Thread number: 151. Amount of data: 0
+Thread number: 152. Amount of data: 0
+Thread number: 153. Amount of data: 0
+Thread number: 154. Amount of data: 0
+Thread number: 155. Amount of data: 0
+Thread number: 156. Amount of data: 0
+Thread number: 157. Amount of data: 0
+Thread number: 158. Amount of data: 0
+Thread number: 159. Amount of data: 0
+Thread number: 160. Amount of data: 0
+Thread number: 161. Amount of data: 0
+Thread number: 162. Amount of data: 0
+Thread number: 163. Amount of data: 0
+Thread number: 164. Amount of data: 0
+Thread number: 165. Amount of data: 0
+Thread number: 166. Amount of data: 0
+Thread number: 167. Amount of data: 0
+Thread number: 168. Amount of data: 0
+Thread number: 169. Amount of data: 0
+Thread number: 170. Amount of data: 0
+Thread number: 171. Amount of data: 0
+Thread number: 172. Amount of data: 0
+Thread number: 173. Amount of data: 0
+Thread number: 174. Amount of data: 0
+Thread number: 175. Amount of data: 0
+Thread number: 176. Amount of data: 0
+Thread number: 177. Amount of data: 0
+Thread number: 178. Amount of data: 0
+Thread number: 179. Amount of data: 0
+Thread number: 180. Amount of data: 0
+Thread number: 181. Amount of data: 0
+Thread number: 182. Amount of data: 0
+Thread number: 183. Amount of data: 0
+Thread number: 184. Amount of data: 0
+Thread number: 185. Amount of data: 0
+Thread number: 186. Amount of data: 0
+Thread number: 187. Amount of data: 0
+Thread number: 188. Amount of data: 0
+Thread number: 189. Amount of data: 0
+Thread number: 190. Amount of data: 0
+Thread number: 191. Amount of data: 0
+Thread number: 192. Amount of data: 0
+Thread number: 193. Amount of data: 0
+Thread number: 194. Amount of data: 0
+Thread number: 195. Amount of data: 0
+Thread number: 196. Amount of data: 0
+Thread number: 197. Amount of data: 0
+Thread number: 198. Amount of data: 0
+Thread number: 199. Amount of data: 0
+Thread number: 200. Amount of data: 0
+Thread number: 201. Amount of data: 0
+Thread number: 202. Amount of data: 0
+Thread number: 203. Amount of data: 0
+Thread number: 204. Amount of data: 0
+Thread number: 205. Amount of data: 0
+Thread number: 206. Amount of data: 0
+Thread number: 207. Amount of data: 0
+Thread number: 208. Amount of data: 0
+Thread number: 209. Amount of data: 0
+Thread number: 210. Amount of data: 0
+Thread number: 211. Amount of data: 0
+Thread number: 212. Amount of data: 0
+Thread number: 213. Amount of data: 0
+Thread number: 214. Amount of data: 0
+Thread number: 215. Amount of data: 0
+Thread number: 216. Amount of data: 0
+Thread number: 217. Amount of data: 0
+Thread number: 218. Amount of data: 0
+Thread number: 219. Amount of data: 0
+Thread number: 220. Amount of data: 0
+Thread number: 221. Amount of data: 0
+Thread number: 222. Amount of data: 0
+Thread number: 223. Amount of data: 0
+Thread number: 224. Amount of data: 0
+Thread number: 225. Amount of data: 0
+Thread number: 226. Amount of data: 0
+Thread number: 227. Amount of data: 0
+Thread number: 228. Amount of data: 0
+Thread number: 229. Amount of data: 0
+Thread number: 230. Amount of data: 0
+Thread number: 231. Amount of data: 0
+Thread number: 232. Amount of data: 0
+Thread number: 233. Amount of data: 0
+Thread number: 234. Amount of data: 0
+Thread number: 235. Amount of data: 0
+Thread number: 236. Amount of data: 0
+Thread number: 237. Amount of data: 0
+Thread number: 238. Amount of data: 0
+Thread number: 239. Amount of data: 0
+Thread number: 240. Amount of data: 0
+Thread number: 241. Amount of data: 0
+Thread number: 242. Amount of data: 0
+Thread number: 243. Amount of data: 0
+Thread number: 244. Amount of data: 0
+Thread number: 245. Amount of data: 0
+Thread number: 246. Amount of data: 0
+Thread number: 247. Amount of data: 0
+Thread number: 248. Amount of data: 0
+Thread number: 249. Amount of data: 0
+Thread number: 250. Amount of data: 0
+Thread number: 251. Amount of data: 0
+Thread number: 252. Amount of data: 0
+Thread number: 253. Amount of data: 0
+Thread number: 254. Amount of data: 0
+Thread number: 255. Amount of data: 0
+Elapsed time: 1535
+9.131087 19.49094 7.028573 7.032948 16.864782 4.7659073 10.217387 8.222705 -14.942617 -4.615168 
+-13.627008 -14.858531 -14.522673 -3.2344968 0.9192501 6.463934 -3.614044 17.264511 -11.761549 -6.8285255 
+10.142921 0.13936242 14.392762 4.790543 -8.009283 -1.3346151 -8.611886 8.034515 -16.286104 2.2502291 
+-4.4903736 -0.82377774 -8.928509 -14.263161 11.1986475 11.965622 -3.2239473 3.8170862 -10.253882 -21.563686 
+-1.3755866 4.543353 -4.853747 9.393756 -0.64823574 14.562914 4.9867873 12.917463 -15.395855 2.0083146 
+6.2479715 10.436545 -5.931159 18.245247 -5.0474944 -3.4658766 9.023809 6.6543794 13.340786 11.092846 
+9.9705 -18.896156 18.250229 -0.007934606 -11.694186 -9.07766 -3.3254051 1.0286291 -4.092218 -8.296368 
+10.144069 2.7806456 -16.09506 -2.7751737 -0.5231997 -9.063499 -4.034758 1.815629 -14.934843 17.313883 
+-2.61461 -4.999875 -5.872198 1.5287802 7.0643907 2.1528218 12.977138 0.16788943 -5.412883 -0.2816182 
+-16.122293 -1.1273427 -2.90947 0.45077118 -1.5087903 -12.589348 7.5266232 -10.395611 -0.42768964 -0.777509 
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="827.0" styleClass="mainContainer" stylesheets="/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.DashboardController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="200.0" styleClass="leftContainer" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <GridPane layoutX="8.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="69.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="113.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="117.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" onMouseClicked="#handleGetViewStudenti" prefHeight="62.0" prefWidth="113.0" styleClass="leftBarLabels" text="Studenti" textAlignment="CENTER" textFill="#0000007c" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Open Sans" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="56.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@studentsIcon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@homework.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="115.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@test-result-on-paper.png" />
+                     </image>
+                  </ImageView>
+                  <Label minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleGetViewTeme" prefHeight="55.0" prefWidth="117.0" styleClass="leftBarLabels" text="Teme" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleGetViewCatalog" prefHeight="62.0" prefWidth="120.0" styleClass="leftBarLabels" text="Note" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label onMouseClicked="#handleGetViewRapoarte" styleClass="leftBarLabels" text="Rapoarte" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                  <ImageView fitHeight="67.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@bar-chart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane fx:id="contentPane" layoutX="223.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" styleClass="rightContainer" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0" />
+   </children>
+</AnchorPane>

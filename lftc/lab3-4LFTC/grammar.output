@@ -1,0 +1,869 @@
+Grammar
+
+    0 $accept: program $end
+
+    1 program: START compound_stmt
+
+    2 compound_stmt: OBRACE stmt_list CBRACE
+
+    3 stmt_list: stmt
+    4          | stmt_list stmt
+
+    5 stmt: decl SEMICOLON
+    6     | arraydec
+    7     | assign SEMICOLON
+    8     | loop
+    9     | if_stst
+   10     | iostmt SEMICOLON
+
+   11 decl: type IDENT
+
+   12 type: INT
+   13     | FLOAT
+   14     | BOOL
+   15     | CHAR
+
+   16 arraydec: ARRAY type OPAR CONST CBRACE SEMICOLON
+
+   17 assign: IDENT ASSIGN expr
+   18       | IDENT ASSIGN INPUT
+   19       | decl ASSIGN expr
+   20       | decl ASSIGN INPUT
+
+   21 op: PLUS
+   22   | MINUS
+   23   | MULT
+   24   | DIV
+   25   | MOD
+
+   26 constant: CONST
+   27         | CONSTREAL
+
+   28 expr: IDENT
+   29     | constant
+   30     | expr op IDENT
+   31     | expr op constant
+   32     | OPAR expr CPAR
+
+   33 loop: WHILE OPAR condition CPAR compound_stmt
+
+   34 condition: expr rel_op expr
+
+   35 rel_op: LT
+   36       | LE
+   37       | GT
+   38       | GE
+   39       | EQ
+   40       | NE
+
+   41 if_stst: IF OPAR condition CPAR compound_stmt
+   42        | IF OPAR condition CPAR compound_stmt ELSE compound_stmt
+
+   43 iostmt: INPUT
+   44       | output
+
+   45 output: PRINT IDENT
+   46       | PRINT constant
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256)
+IDENT (258) 11 17 18 28 30 45
+CONST (259) 16 26
+CONSTREAL (260) 27
+INT (261) 12
+FLOAT (262) 13
+ARRAY (263) 16
+BOOL (264) 14
+CHAR (265) 15
+START (266) 1
+IF (267) 41 42
+ELSE (268) 42
+WHILE (269) 33
+INPUT (270) 18 20 43
+PRINT (271) 45 46
+SEMICOLON (272) 5 7 10 16
+OPAR (273) 16 32 33 41 42
+CPAR (274) 32 33 41 42
+OBRACE (275) 2
+CBRACE (276) 2 16
+PLUS (277) 21
+MINUS (278) 22
+MULT (279) 23
+DIV (280) 24
+MOD (281) 25
+GT (282) 37
+LT (283) 35
+GE (284) 38
+LE (285) 36
+EQ (286) 39
+NE (287) 40
+ASSIGN (288) 17 18 19 20
+
+
+Nonterminals, with rules where they appear
+
+$accept (34)
+    on left: 0
+program (35)
+    on left: 1, on right: 0
+compound_stmt (36)
+    on left: 2, on right: 1 33 41 42
+stmt_list (37)
+    on left: 3 4, on right: 2 4
+stmt (38)
+    on left: 5 6 7 8 9 10, on right: 3 4
+decl (39)
+    on left: 11, on right: 5 19 20
+type (40)
+    on left: 12 13 14 15, on right: 11 16
+arraydec (41)
+    on left: 16, on right: 6
+assign (42)
+    on left: 17 18 19 20, on right: 7
+op (43)
+    on left: 21 22 23 24 25, on right: 30 31
+constant (44)
+    on left: 26 27, on right: 29 31 46
+expr (45)
+    on left: 28 29 30 31 32, on right: 17 19 30 31 32 34
+loop (46)
+    on left: 33, on right: 8
+condition (47)
+    on left: 34, on right: 33 41 42
+rel_op (48)
+    on left: 35 36 37 38 39 40, on right: 34
+if_stst (49)
+    on left: 41 42, on right: 9
+iostmt (50)
+    on left: 43 44, on right: 10
+output (51)
+    on left: 45 46, on right: 44
+
+
+state 0
+
+    0 $accept: . program $end
+
+    START  shift, and go to state 1
+
+    program  go to state 2
+
+
+state 1
+
+    1 program: START . compound_stmt
+
+    OBRACE  shift, and go to state 3
+
+    compound_stmt  go to state 4
+
+
+state 2
+
+    0 $accept: program . $end
+
+    $end  shift, and go to state 5
+
+
+state 3
+
+    2 compound_stmt: OBRACE . stmt_list CBRACE
+
+    IDENT  shift, and go to state 6
+    INT    shift, and go to state 7
+    FLOAT  shift, and go to state 8
+    ARRAY  shift, and go to state 9
+    BOOL   shift, and go to state 10
+    CHAR   shift, and go to state 11
+    IF     shift, and go to state 12
+    WHILE  shift, and go to state 13
+    INPUT  shift, and go to state 14
+    PRINT  shift, and go to state 15
+
+    stmt_list  go to state 16
+    stmt       go to state 17
+    decl       go to state 18
+    type       go to state 19
+    arraydec   go to state 20
+    assign     go to state 21
+    loop       go to state 22
+    if_stst    go to state 23
+    iostmt     go to state 24
+    output     go to state 25
+
+
+state 4
+
+    1 program: START compound_stmt .
+
+    $default  reduce using rule 1 (program)
+
+
+state 5
+
+    0 $accept: program $end .
+
+    $default  accept
+
+
+state 6
+
+   17 assign: IDENT . ASSIGN expr
+   18       | IDENT . ASSIGN INPUT
+
+    ASSIGN  shift, and go to state 26
+
+
+state 7
+
+   12 type: INT .
+
+    $default  reduce using rule 12 (type)
+
+
+state 8
+
+   13 type: FLOAT .
+
+    $default  reduce using rule 13 (type)
+
+
+state 9
+
+   16 arraydec: ARRAY . type OPAR CONST CBRACE SEMICOLON
+
+    INT    shift, and go to state 7
+    FLOAT  shift, and go to state 8
+    BOOL   shift, and go to state 10
+    CHAR   shift, and go to state 11
+
+    type  go to state 27
+
+
+state 10
+
+   14 type: BOOL .
+
+    $default  reduce using rule 14 (type)
+
+
+state 11
+
+   15 type: CHAR .
+
+    $default  reduce using rule 15 (type)
+
+
+state 12
+
+   41 if_stst: IF . OPAR condition CPAR compound_stmt
+   42        | IF . OPAR condition CPAR compound_stmt ELSE compound_stmt
+
+    OPAR  shift, and go to state 28
+
+
+state 13
+
+   33 loop: WHILE . OPAR condition CPAR compound_stmt
+
+    OPAR  shift, and go to state 29
+
+
+state 14
+
+   43 iostmt: INPUT .
+
+    $default  reduce using rule 43 (iostmt)
+
+
+state 15
+
+   45 output: PRINT . IDENT
+   46       | PRINT . constant
+
+    IDENT      shift, and go to state 30
+    CONST      shift, and go to state 31
+    CONSTREAL  shift, and go to state 32
+
+    constant  go to state 33
+
+
+state 16
+
+    2 compound_stmt: OBRACE stmt_list . CBRACE
+    4 stmt_list: stmt_list . stmt
+
+    IDENT   shift, and go to state 6
+    INT     shift, and go to state 7
+    FLOAT   shift, and go to state 8
+    ARRAY   shift, and go to state 9
+    BOOL    shift, and go to state 10
+    CHAR    shift, and go to state 11
+    IF      shift, and go to state 12
+    WHILE   shift, and go to state 13
+    INPUT   shift, and go to state 14
+    PRINT   shift, and go to state 15
+    CBRACE  shift, and go to state 34
+
+    stmt      go to state 35
+    decl      go to state 18
+    type      go to state 19
+    arraydec  go to state 20
+    assign    go to state 21
+    loop      go to state 22
+    if_stst   go to state 23
+    iostmt    go to state 24
+    output    go to state 25
+
+
+state 17
+
+    3 stmt_list: stmt .
+
+    $default  reduce using rule 3 (stmt_list)
+
+
+state 18
+
+    5 stmt: decl . SEMICOLON
+   19 assign: decl . ASSIGN expr
+   20       | decl . ASSIGN INPUT
+
+    SEMICOLON  shift, and go to state 36
+    ASSIGN     shift, and go to state 37
+
+
+state 19
+
+   11 decl: type . IDENT
+
+    IDENT  shift, and go to state 38
+
+
+state 20
+
+    6 stmt: arraydec .
+
+    $default  reduce using rule 6 (stmt)
+
+
+state 21
+
+    7 stmt: assign . SEMICOLON
+
+    SEMICOLON  shift, and go to state 39
+
+
+state 22
+
+    8 stmt: loop .
+
+    $default  reduce using rule 8 (stmt)
+
+
+state 23
+
+    9 stmt: if_stst .
+
+    $default  reduce using rule 9 (stmt)
+
+
+state 24
+
+   10 stmt: iostmt . SEMICOLON
+
+    SEMICOLON  shift, and go to state 40
+
+
+state 25
+
+   44 iostmt: output .
+
+    $default  reduce using rule 44 (iostmt)
+
+
+state 26
+
+   17 assign: IDENT ASSIGN . expr
+   18       | IDENT ASSIGN . INPUT
+
+    IDENT      shift, and go to state 41
+    CONST      shift, and go to state 31
+    CONSTREAL  shift, and go to state 32
+    INPUT      shift, and go to state 42
+    OPAR       shift, and go to state 43
+
+    constant  go to state 44
+    expr      go to state 45
+
+
+state 27
+
+   16 arraydec: ARRAY type . OPAR CONST CBRACE SEMICOLON
+
+    OPAR  shift, and go to state 46
+
+
+state 28
+
+   41 if_stst: IF OPAR . condition CPAR compound_stmt
+   42        | IF OPAR . condition CPAR compound_stmt ELSE compound_stmt
+
+    IDENT      shift, and go to state 41
+    CONST      shift, and go to state 31
+    CONSTREAL  shift, and go to state 32
+    OPAR       shift, and go to state 43
+
+    constant   go to state 44
+    expr       go to state 47
+    condition  go to state 48
+
+
+state 29
+
+   33 loop: WHILE OPAR . condition CPAR compound_stmt
+
+    IDENT      shift, and go to state 41
+    CONST      shift, and go to state 31
+    CONSTREAL  shift, and go to state 32
+    OPAR       shift, and go to state 43
+
+    constant   go to state 44
+    expr       go to state 47
+    condition  go to state 49
+
+
+state 30
+
+   45 output: PRINT IDENT .
+
+    $default  reduce using rule 45 (output)
+
+
+state 31
+
+   26 constant: CONST .
+
+    $default  reduce using rule 26 (constant)
+
+
+state 32
+
+   27 constant: CONSTREAL .
+
+    $default  reduce using rule 27 (constant)
+
+
+state 33
+
+   46 output: PRINT constant .
+
+    $default  reduce using rule 46 (output)
+
+
+state 34
+
+    2 compound_stmt: OBRACE stmt_list CBRACE .
+
+    $default  reduce using rule 2 (compound_stmt)
+
+
+state 35
+
+    4 stmt_list: stmt_list stmt .
+
+    $default  reduce using rule 4 (stmt_list)
+
+
+state 36
+
+    5 stmt: decl SEMICOLON .
+
+    $default  reduce using rule 5 (stmt)
+
+
+state 37
+
+   19 assign: decl ASSIGN . expr
+   20       | decl ASSIGN . INPUT
+
+    IDENT      shift, and go to state 41
+    CONST      shift, and go to state 31
+    CONSTREAL  shift, and go to state 32
+    INPUT      shift, and go to state 50
+    OPAR       shift, and go to state 43
+
+    constant  go to state 44
+    expr      go to state 51
+
+
+state 38
+
+   11 decl: type IDENT .
+
+    $default  reduce using rule 11 (decl)
+
+
+state 39
+
+    7 stmt: assign SEMICOLON .
+
+    $default  reduce using rule 7 (stmt)
+
+
+state 40
+
+   10 stmt: iostmt SEMICOLON .
+
+    $default  reduce using rule 10 (stmt)
+
+
+state 41
+
+   28 expr: IDENT .
+
+    $default  reduce using rule 28 (expr)
+
+
+state 42
+
+   18 assign: IDENT ASSIGN INPUT .
+
+    $default  reduce using rule 18 (assign)
+
+
+state 43
+
+   32 expr: OPAR . expr CPAR
+
+    IDENT      shift, and go to state 41
+    CONST      shift, and go to state 31
+    CONSTREAL  shift, and go to state 32
+    OPAR       shift, and go to state 43
+
+    constant  go to state 44
+    expr      go to state 52
+
+
+state 44
+
+   29 expr: constant .
+
+    $default  reduce using rule 29 (expr)
+
+
+state 45
+
+   17 assign: IDENT ASSIGN expr .
+   30 expr: expr . op IDENT
+   31     | expr . op constant
+
+    PLUS   shift, and go to state 53
+    MINUS  shift, and go to state 54
+    MULT   shift, and go to state 55
+    DIV    shift, and go to state 56
+    MOD    shift, and go to state 57
+
+    $default  reduce using rule 17 (assign)
+
+    op  go to state 58
+
+
+state 46
+
+   16 arraydec: ARRAY type OPAR . CONST CBRACE SEMICOLON
+
+    CONST  shift, and go to state 59
+
+
+state 47
+
+   30 expr: expr . op IDENT
+   31     | expr . op constant
+   34 condition: expr . rel_op expr
+
+    PLUS   shift, and go to state 53
+    MINUS  shift, and go to state 54
+    MULT   shift, and go to state 55
+    DIV    shift, and go to state 56
+    MOD    shift, and go to state 57
+    GT     shift, and go to state 60
+    LT     shift, and go to state 61
+    GE     shift, and go to state 62
+    LE     shift, and go to state 63
+    EQ     shift, and go to state 64
+    NE     shift, and go to state 65
+
+    op      go to state 58
+    rel_op  go to state 66
+
+
+state 48
+
+   41 if_stst: IF OPAR condition . CPAR compound_stmt
+   42        | IF OPAR condition . CPAR compound_stmt ELSE compound_stmt
+
+    CPAR  shift, and go to state 67
+
+
+state 49
+
+   33 loop: WHILE OPAR condition . CPAR compound_stmt
+
+    CPAR  shift, and go to state 68
+
+
+state 50
+
+   20 assign: decl ASSIGN INPUT .
+
+    $default  reduce using rule 20 (assign)
+
+
+state 51
+
+   19 assign: decl ASSIGN expr .
+   30 expr: expr . op IDENT
+   31     | expr . op constant
+
+    PLUS   shift, and go to state 53
+    MINUS  shift, and go to state 54
+    MULT   shift, and go to state 55
+    DIV    shift, and go to state 56
+    MOD    shift, and go to state 57
+
+    $default  reduce using rule 19 (assign)
+
+    op  go to state 58
+
+
+state 52
+
+   30 expr: expr . op IDENT
+   31     | expr . op constant
+   32     | OPAR expr . CPAR
+
+    CPAR   shift, and go to state 69
+    PLUS   shift, and go to state 53
+    MINUS  shift, and go to state 54
+    MULT   shift, and go to state 55
+    DIV    shift, and go to state 56
+    MOD    shift, and go to state 57
+
+    op  go to state 58
+
+
+state 53
+
+   21 op: PLUS .
+
+    $default  reduce using rule 21 (op)
+
+
+state 54
+
+   22 op: MINUS .
+
+    $default  reduce using rule 22 (op)
+
+
+state 55
+
+   23 op: MULT .
+
+    $default  reduce using rule 23 (op)
+
+
+state 56
+
+   24 op: DIV .
+
+    $default  reduce using rule 24 (op)
+
+
+state 57
+
+   25 op: MOD .
+
+    $default  reduce using rule 25 (op)
+
+
+state 58
+
+   30 expr: expr op . IDENT
+   31     | expr op . constant
+
+    IDENT      shift, and go to state 70
+    CONST      shift, and go to state 31
+    CONSTREAL  shift, and go to state 32
+
+    constant  go to state 71
+
+
+state 59
+
+   16 arraydec: ARRAY type OPAR CONST . CBRACE SEMICOLON
+
+    CBRACE  shift, and go to state 72
+
+
+state 60
+
+   37 rel_op: GT .
+
+    $default  reduce using rule 37 (rel_op)
+
+
+state 61
+
+   35 rel_op: LT .
+
+    $default  reduce using rule 35 (rel_op)
+
+
+state 62
+
+   38 rel_op: GE .
+
+    $default  reduce using rule 38 (rel_op)
+
+
+state 63
+
+   36 rel_op: LE .
+
+    $default  reduce using rule 36 (rel_op)
+
+
+state 64
+
+   39 rel_op: EQ .
+
+    $default  reduce using rule 39 (rel_op)
+
+
+state 65
+
+   40 rel_op: NE .
+
+    $default  reduce using rule 40 (rel_op)
+
+
+state 66
+
+   34 condition: expr rel_op . expr
+
+    IDENT      shift, and go to state 41
+    CONST      shift, and go to state 31
+    CONSTREAL  shift, and go to state 32
+    OPAR       shift, and go to state 43
+
+    constant  go to state 44
+    expr      go to state 73
+
+
+state 67
+
+   41 if_stst: IF OPAR condition CPAR . compound_stmt
+   42        | IF OPAR condition CPAR . compound_stmt ELSE compound_stmt
+
+    OBRACE  shift, and go to state 3
+
+    compound_stmt  go to state 74
+
+
+state 68
+
+   33 loop: WHILE OPAR condition CPAR . compound_stmt
+
+    OBRACE  shift, and go to state 3
+
+    compound_stmt  go to state 75
+
+
+state 69
+
+   32 expr: OPAR expr CPAR .
+
+    $default  reduce using rule 32 (expr)
+
+
+state 70
+
+   30 expr: expr op IDENT .
+
+    $default  reduce using rule 30 (expr)
+
+
+state 71
+
+   31 expr: expr op constant .
+
+    $default  reduce using rule 31 (expr)
+
+
+state 72
+
+   16 arraydec: ARRAY type OPAR CONST CBRACE . SEMICOLON
+
+    SEMICOLON  shift, and go to state 76
+
+
+state 73
+
+   30 expr: expr . op IDENT
+   31     | expr . op constant
+   34 condition: expr rel_op expr .
+
+    PLUS   shift, and go to state 53
+    MINUS  shift, and go to state 54
+    MULT   shift, and go to state 55
+    DIV    shift, and go to state 56
+    MOD    shift, and go to state 57
+
+    $default  reduce using rule 34 (condition)
+
+    op  go to state 58
+
+
+state 74
+
+   41 if_stst: IF OPAR condition CPAR compound_stmt .
+   42        | IF OPAR condition CPAR compound_stmt . ELSE compound_stmt
+
+    ELSE  shift, and go to state 77
+
+    $default  reduce using rule 41 (if_stst)
+
+
+state 75
+
+   33 loop: WHILE OPAR condition CPAR compound_stmt .
+
+    $default  reduce using rule 33 (loop)
+
+
+state 76
+
+   16 arraydec: ARRAY type OPAR CONST CBRACE SEMICOLON .
+
+    $default  reduce using rule 16 (arraydec)
+
+
+state 77
+
+   42 if_stst: IF OPAR condition CPAR compound_stmt ELSE . compound_stmt
+
+    OBRACE  shift, and go to state 3
+
+    compound_stmt  go to state 78
+
+
+state 78
+
+   42 if_stst: IF OPAR condition CPAR compound_stmt ELSE compound_stmt .
+
+    $default  reduce using rule 42 (if_stst)

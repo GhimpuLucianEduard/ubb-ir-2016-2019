@@ -1,0 +1,26 @@
+Generated matrix: 
+Col count: 10
+Row count: 10
+Matrix to big to write.
+Generated matrix: 
+Col count: 10
+Row count: 10
+Matrix to big to write.
+Date: Sun Oct 07 01:47:21 EEST 2018
+=============== SECVENTIAL ===============
+Elapsed time: 1
+Matrix to big to write.
+=============== PARALLEL ===============
+Number of elements in matrix: 100
+Rounded number of elements per thread: 12
+Modulo (remained elements): 4
+Thread number: 0. Amount of data: 13
+Thread number: 1. Amount of data: 13
+Thread number: 2. Amount of data: 13
+Thread number: 3. Amount of data: 13
+Thread number: 4. Amount of data: 12
+Thread number: 5. Amount of data: 12
+Thread number: 6. Amount of data: 12
+Thread number: 7. Amount of data: 12
+Elapsed time: 51
+Matrix to big to write.
